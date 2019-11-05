@@ -12,10 +12,8 @@ fp.write("{")
 sleep(1)
 
 def scrape_playlist(playlist_id, last=False):
-    # open driver
+    # open driver and create list
     driver.get("https://open.spotify.com/playlist/"+playlist_id)
-
-    # create list
     artist_list = []
 
     # parse HTML content with Xpath
@@ -27,7 +25,7 @@ def scrape_playlist(playlist_id, last=False):
 
     # count result and write on file
     count_artist = dumps(Counter(artist_list), sort_keys=True, indent=12)
-    
+
     # False parameters for JSON
     if last == True:
         fp.write('\n\t"{}":\n\t\t{}\n}}\n'.format(playlist_name ,count_artist))

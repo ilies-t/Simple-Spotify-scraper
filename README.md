@@ -7,7 +7,7 @@ Return the name of a playlist and the number of times an artist is present in a 
 pip install selenium
 ```  
 #### Chrome webdriver  
-* [Chromedriver](https://chromedriver.storage.googleapis.com/index.html?path=75.0.3770.90/) - Works with v.75.0.3770.90  
+* [Chromedriver](https://chromedriver.storage.googleapis.com/index.html?path=78.0.3904.70/) - Works with v.78.0.3904.70  
   
 ## Usage  
 Return one playlist in JSON, **use only the playlist ID** :
